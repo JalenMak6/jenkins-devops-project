@@ -13,9 +13,7 @@ pipeline {
             cleanWs()
             }
         }
-    }
-
-    stages{
+    
         stage("Checkout from SCM"){
             steps {
                 git branch: 'main', url: 'https://github.com/JalenMak6/jenkins-devops-project.git'
